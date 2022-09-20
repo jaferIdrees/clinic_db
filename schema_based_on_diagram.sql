@@ -34,3 +34,15 @@ type VARCHAR,
 name VARCHAR
 )
 
+ALTER TABLE medical_histories
+ADD CONSTRAINT patient_id FOREIGN KEY (patient_id) REFERENCES patients(id);
+
+ALTER TABLE invoices
+ADD CONSTRAINT medical_history_id FOREIGN KEY (medical_history_id) REFERENCES medical_histories(id);
+
+ALTER TABLE invoice_items
+ADD CONSTRAINT invoice_id FOREIGN KEY (invoice_id) REFERENCES invoices(id)
+
+ALTER TABLE invoice_items
+ADD CONSTRAINT treatment_id FOREIGN KEY (treatment_id) REFERENCES treatments(id);
+
