@@ -1,20 +1,15 @@
-# vet-clinic-projects-template
+# Clinic Database
 
-> This project is used as an introduction practice for Postgresql.
+> This database includes five tables for patients, invoices, medical_histories, invoice_items, and treatments.
 
-
+> To implement the many-to-many relationship between medical_histories and treatments we added an extra table called medical_histories_treatment
 
 ## Getting Started
 
 This repository includes files with plain SQL that can be used to recreate a database:
 
 - Use [schema.sql](./schema.sql) to create all tables.
-- Use [data.sql](./data.sql) to populate tables with sample data.
-- Check [queries.sql](./queries.sql) for examples of queries that can be run on a newly created database. **Important note: this file might include queries that make changes in the database (e.g., remove records). Use them responsibly!**
 
-## Schema Diagram
-
-![Schema](schema.drawio.svg)
 
 ## Authors
 
@@ -40,7 +35,7 @@ This repository includes files with plain SQL that can be used to recreate a dat
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/jaferIdrees/vet_clinic_db/issues).
+Feel free to check the [issues page](https://github.com/jaferIdrees/clinic_db/issues).
 
 ## Show your support
 
